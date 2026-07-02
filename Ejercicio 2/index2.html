@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de Contacto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles2.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <div class="card shadow p-4">
+
+            <h2 class="text-center mb-4">Formulario de Contacto</h2>
+
+            <form id="formulario" novalidate>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="invalid-feedback">
+                        Ingrese su nombre completo.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                        Ingrese un correo válido.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" required>
+                    <div class="invalid-feedback">
+                        Ingrese el asunto.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="5" id="mensaje" required></textarea>
+                    <div class="invalid-feedback">
+                        Escriba un mensaje.
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+            <div id="alerta" class="alert alert-success mt-3 d-none">
+                Mensaje enviado correctamente.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
